@@ -27,7 +27,7 @@ for i in range(1):
     password = input("Password: ").capitalize()
 
 # inserting data into table
-conn.execute("INSERT INTO characters VALUES ('{}','{}')".format(username,password))
+conn.execute("INSERT INTO users VALUES ('{}','{}')".format(username,password))
 
 # commit command
 conn.commit()
